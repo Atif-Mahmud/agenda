@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Schedule</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: #5a67d8;
+      }
+      .schedule {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .event {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        border-left: 5px solid;
+        border-radius: 5px;
+        color: #fff;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .event:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .meal {
+        background: #ff9f1c;
+        border-color: #ffbf69;
+      }
+      .religious {
+        background: #2ec4b6;
+        border-color: #cbf3f0;
+      }
+      .social {
+        background: #e71d36;
+        border-color: #ff5f58;
+      }
+      .personal {
+        background: #6a4c93;
+        border-color: #9d75cb;
+      }
+      .work {
+        background: #011627;
+        border-color: #4e8098;
+      }
+      .time {
+        font-weight: bold;
+      }
+      .details {
+        margin-top: 5px;
+      }
+      .emoji {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daily Schedule - June 4, 2024</h1>
+      <div class="schedule">
+        <div class="event religious" style="grid-column: span 2">
+          <div class="time">3:55am - 4:10am</div>
+          <div class="details"><span class="emoji">🕌</span>Fajr</div>
+        </div>
+        <div class="event religious" style="grid-column: span 2">
+          <div class="time">5:43am</div>
+          <div class="details"><span class="emoji">🌅</span>Sunrise</div>
+        </div>
+        <div class="event personal" style="grid-column: span 1">
+          <div class="time">6:00am - 6:15am</div>
+          <div class="details"><span class="emoji">📅</span>Time Block</div>
+        </div>
+        <div class="event personal" style="grid-column: span 1">
+          <div class="time">6:15am - 6:30am</div>
+          <div class="details"><span class="emoji">📧</span>Inbox Zero</div>
+        </div>
+        <div class="event personal" style="grid-column: span 2">
+          <div class="time">6:30am - 7:35am</div>
+          <div class="details"><span class="emoji">🏋️‍♂️</span>Workout</div>
+        </div>
+        <div class="event meal" style="grid-column: span 1">
+          <div class="time">7:45am - 8:00am</div>
+          <div class="details"><span class="emoji">🍳</span>Breakfast</div>
+        </div>
+        <div class="event personal" style="grid-column: span 1">
+          <div class="time">8:00am - 8:30am</div>
+          <div class="details"><span class="emoji">🚗</span>Travel Time</div>
+        </div>
+        <div class="event work" style="grid-column: span 2">
+          <div class="time">8:30am - 12:15pm</div>
+          <div class="details"><span class="emoji">💻</span>Work</div>
+        </div>
+        <div class="event meal" style="grid-column: span 2">
+          <div class="time">12:15pm - 1:15pm</div>
+          <div class="details"><span class="emoji">🍽️</span>Lunch</div>
+        </div>
+        <div class="event religious" style="grid-column: span 2">
+          <div class="time">1:26pm - 1:41pm</div>
+          <div class="details"><span class="emoji">🕌</span>Dhuhr</div>
+        </div>
+        <div class="event work" style="grid-column: span 2">
+          <div class="time">1:45pm - 4:30pm</div>
+          <div class="details"><span class="emoji">💻</span>Work</div>
+        </div>
+        <div class="event personal" style="grid-column: span 2">
+          <div class="time">4:30pm - 5:00pm</div>
+          <div class="details"><span class="emoji">🚗</span>Travel Time</div>
+        </div>
+        <div class="event personal" style="grid-column: span 1">
+          <div class="time">5:15pm - 5:45pm</div>
+          <div class="details">
+            <span class="emoji">⌨️</span>Keyboard Layout Practice
+          </div>
+        </div>
+        <div class="event personal" style="grid-column: span 1">
+          <div class="time">5:45pm - 6:45pm</div>
+          <div class="details"><span class="emoji">🎯</span>Aim Training</div>
+        </div>
+        <div class="event religious" style="grid-column: span 2">
+          <div class="time">6:38pm - 6:53pm</div>
+          <div class="details"><span class="emoji">🕌</span>Asr</div>
+        </div>
+        <div class="event personal" style="grid-column: span 2">
+          <div class="time">6:45pm - 7:45pm</div>
+          <div class="details">
+            <span class="emoji">💻</span>Computer Science Practice
+          </div>
+        </div>
+        <div class="event social" style="grid-column: span 2">
+          <div class="time">8:00pm - 9:45pm</div>
+          <div class="details"><span class="emoji">🐰</span>Bunno Time</div>
+        </div>
+        <div class="event meal" style="grid-column: span 2">
+          <div class="time">8:15pm - 8:45pm</div>
+          <div class="details"><span class="emoji">🍽️</span>Dinner</div>
+        </div>
+        <div class="event religious" style="grid-column: span 2">
+          <div class="time">9:03pm - 9:18pm</div>
+          <div class="details"><span class="emoji">🕌</span>Maghrib</div>
+        </div>
+        <div class="event personal" style="grid-column: span 2">
+          <div class="time">9:45pm - 10:00pm</div>
+          <div class="details"><span class="emoji">📋</span>Daily Review</div>
+        </div>
+        <div class="event personal" style="grid-column: span 1">
+          <div class="time">10:00pm - 10:15pm</div>
+          <div class="details"><span class="emoji">🧹</span>Clean</div>
+        </div>
+        <div class="event personal" style="grid-column: span 1">
+          <div class="time">10:00pm - 10:15pm</div>
+          <div class="details"><span class="emoji">🛏️</span>Change Sheets</div>
+        </div>
+        <div class="event religious" style="grid-column: span 2">
+          <div class="time">10:15pm - 10:30pm</div>
+          <div class="details"><span class="emoji">🕌</span>Isha</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
